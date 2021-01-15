@@ -3,7 +3,9 @@ pipeline{
     stages{
         stage('build'){
             steps{
-              sh 'npm install'
+              echo 'Install node js'
+              bat 'npm install'
+
             }
         }
     }
